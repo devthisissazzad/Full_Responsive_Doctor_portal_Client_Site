@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.99bc07b5.css",
+    "main.js": "/static/js/main.e9b22081.js",
+    "static/js/787.4e5692c6.chunk.js": "/static/js/787.4e5692c6.chunk.js",
+    "static/media/appointment.png": "/static/media/appointment.d0d01a86a1465e3f2562.png",
+    "static/media/treatment.png": "/static/media/treatment.4663af1929c734cd3854.png",
+    "static/media/chair.png": "/static/media/chair.3ca333d1fa050f6e6eb4.png",
+    "static/media/doctor.png": "/static/media/doctor.0a279a5b65e8258865bf.png",
+    "static/media/phone.svg": "/static/media/phone.0b1c25f70938a97d59d5c7c1796f0b61.svg",
+    "static/media/clock.svg": "/static/media/clock.623246e126ee58a8d90f2460c08c0f6b.svg",
+    "index.html": "/index.html",
+    "static/media/marker.svg": "/static/media/marker.0bdab1635363afd723adbfe035c3358e.svg",
+    "main.99bc07b5.css.map": "/static/css/main.99bc07b5.css.map",
+    "main.e9b22081.js.map": "/static/js/main.e9b22081.js.map",
+    "787.4e5692c6.chunk.js.map": "/static/js/787.4e5692c6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.99bc07b5.css",
+    "static/js/main.e9b22081.js"
+  ]
+}

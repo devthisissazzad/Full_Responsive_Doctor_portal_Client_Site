@@ -11,6 +11,7 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 
 // import required modules
+import { Pagination } from "swiper";
 
 const Testimonial = () => {
   return (
@@ -26,6 +27,10 @@ const Testimonial = () => {
           slidesPerView={1}
           spaceBetween={0}
           freeMode={true}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Pagination]}
           className="mySwiper shadow-xl bg-white text-black rounded-md my-10"
         >
           <SwiperSlide>
