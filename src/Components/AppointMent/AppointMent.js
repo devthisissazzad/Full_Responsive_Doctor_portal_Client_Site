@@ -30,7 +30,7 @@ const AppointMent = () => {
             here', making it look like readable English. Many desktop publishing
             packages and web page
           </p>
-          <Link to="/appoinMent">
+          <Link to="/appointment">
             <Button>GET STARTED</Button>
           </Link>
         </div>

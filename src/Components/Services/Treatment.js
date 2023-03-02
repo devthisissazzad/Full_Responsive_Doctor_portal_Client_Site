@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import treatment from "../../assets/images/treatment.png";
 import Button from "../../ShearComponents/Button/Button";
 
@@ -25,7 +26,9 @@ const Treatment = () => {
             here', making it look like readable English. Many desktop publishing
             packages and web page
           </p>
-          <Button>GET STARTED</Button>
+          <Link to="/appointment">
+            <Button>GET STARTED</Button>
+          </Link>
         </div>
       </div>
     </div>

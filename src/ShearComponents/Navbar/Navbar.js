@@ -19,15 +19,15 @@ const Navbar = () => {
           </div>
           <div className="right_nav cursor-pointer">
             <ul
-              className={`lg:flex md:flex gap-3 lg:static md:static sm:absolute absolute justify-center ${
+              className={`lg:flex md:flex gap-3 lg:static md:static sm:absolute absolute justify-center  ${
                 menu ? "left-0" : "left-[-10000px]"
-              } lg:w-fit md:w-fit sm:w-1/2 w-1/2 lg:bg-inherit md:bg-inherit ${
+              } lg:w-fit md:w-fit sm:w-[80%] w-[80%] lg:bg-inherit md:bg-inherit ${
                 mode ? "bg-black" : "bg-white"
               }   duration-700 ease-in-out lg:h-fit md:h-fit sm:h-full h-full top-0 text-base ${
                 mode ? "shadow-md" : "shadow-md"
               } ${
                 mode ? "shadow-gray-200" : "shadow-black"
-              } lg:shadow-none md:shadow-none`}
+              } lg:shadow-none md:shadow-none max-h-min z-50`}
             >
               <li className=" lg:w-fit md:w-fit sm:w-full w-full text-center lg:py-0 md:py-0 sm:py-2 py-2 lg:bg-inherit md:bg-inherit  hover:shadow-lg shadow-slate-300 lg:hover:shadow-none md:hover:shadow-none duration-500 ease-in-out lg:mb-0 md:mb-0 mb-2 ">
                 <Link to="/home">Home</Link>

@@ -35,6 +35,11 @@ const ContactUs = () => {
             rows="5"
           ></textarea>
         </div>
+        <input
+          className=" w-full border-none outline-none rounded-md shadow-md py-3 placeholder:text-black px-5 bg-white mt-5 shadow-slate-400 hover:bg-success text-black duration-500 cursor-pointer  mb-5"
+          type="submit"
+          value="Send"
+        />
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../../ShearComponents/Button/Button";
 import hero from "../../assets/images/chair.png";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -14,7 +15,9 @@ const Hero = () => {
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the
         </p>
-        <Button>GET STARTED</Button>
+        <Link to="/appointment">
+          <Button>GET STARTED</Button>
+        </Link>
       </div>
       <div className="hero_right lg:pt-0 md:pt-0 sm:pt-5 pt-5">
         <img className="w-full" src={hero} alt="heroImg" />
