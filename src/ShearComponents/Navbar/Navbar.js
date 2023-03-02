@@ -12,10 +12,12 @@ const Navbar = () => {
         mode ? "shadow-slate-500" : "shadow-slate-200"
       }`}
     >
-      <div className="nav_bar lg:w-[1320px] lg:mx-auto md:w-full sm:w-full w-full lg:px-0 md:px-2 sm:px-2 px-2 py-4">
+      <div className="nav_bar lg:w-[1320px] lg:mx-auto md:w-full sm:w-full w-full lg:px-0 md:px-2 sm:px-2 px-2 py-4 cursor-pointer">
         <div className="nav_wrapper lg:flex md:flex sm:flex flex lg:justify-between md:justify-between sm:justify-between justify-between lg:items-center md:items-center sm:items-center items-center ">
           <div className="left_nav">
-            <h3 className=" text-base">Doctors Portol</h3>
+            <Link to="/">
+              <h3 className=" text-base">Doctors Portol</h3>
+            </Link>
           </div>
           <div className="right_nav cursor-pointer">
             <ul

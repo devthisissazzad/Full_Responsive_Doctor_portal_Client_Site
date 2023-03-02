@@ -7,7 +7,9 @@ import AppointmentOption from "./AppointmentOption";
 const AppointMentServices = ({ selected }) => {
   const [appointments, setAppointments] = useState(null);
   const appointmentData = async () => {
-    const data = await axios.get(`http://localhost:5000/appointment`);
+    const data = await axios.get(
+      `https://doctors-protol-server.vercel.app/appointment`
+    );
     setAppointments(data.data.data);
   };
   useEffect(() => {

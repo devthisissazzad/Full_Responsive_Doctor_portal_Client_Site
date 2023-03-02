@@ -1,17 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import { format } from "date-fns";
+import { AuthContext } from "../../../Context/Context";
 
 const Modal = ({ appointmentValue, selected }) => {
+  const { user } = useContext(AuthContext);
   const { name, slots } = appointmentValue;
   const date = format(selected, "PP");
   //   handelForm
   const handelForm = (e) => {
     e.preventDefault();
     const treatmentName = e.target.treatmentName.value;
-    const userName = e.target.username.value;
+    const userName = user?.displayName;
     const bookingDate = e.target.time.value;
     const phone = e.target.phone.value;
-    const email = e.target.email.value;
+    const email = user?.email;
     console.log(treatmentName, userName, bookingDate, phone, email);
   };
   //   handelForm
@@ -59,7 +61,7 @@ const Modal = ({ appointmentValue, selected }) => {
               className="w-full mt-3 py-2 rounded-md bg-white border-none outline-none text-black px-5"
               type="text"
               name="username"
-              value="sazzad"
+              placeholder="userName"
               required
             />
             <input
@@ -73,7 +75,7 @@ const Modal = ({ appointmentValue, selected }) => {
               className="w-full mt-3 py-2 rounded-md bg-white border-none outline-none text-black px-5"
               type="email"
               name="email"
-              placeholder="Email"
+              value={user?.email}
               required
             />
             <input
